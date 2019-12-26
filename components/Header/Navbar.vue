@@ -3,7 +3,7 @@
       <nav class="uk-navbar">
         <div class="uk-navbar-left">
           <div class="uk-padding-small ">
-            <nuxt-link to="../" class="uk-navbar-item uk-logo"
+            <nuxt-link to="/" class="uk-navbar-item uk-logo"
               >
               <img src="@/assets/img/logo.svg" alt="" />
             </nuxt-link>

@@ -1,5 +1,5 @@
 <template>
-  <li><nuxt-link :to="url">{{ titulo }}</nuxt-link></li>
+  <nuxt-link active-class="uk-active" tag="li" :to="url" ><a>{{ titulo }}</a></nuxt-link>
 </template>
 
 <script>

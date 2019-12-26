@@ -2,6 +2,7 @@
 <div id="menu-mobile" uk-offcanvas="overlay: true">
 
   <div
+    id="painel-menu-mobile"
     class="uk-offcanvas-bar uk-flex uk-flex-column uk-text-center uk-offcanvas-bar-animation uk-offcanvas-slide"
   >
     <button
@@ -56,45 +57,22 @@
     </div>
   </div>
 </div>
-
-  <!-- <div class="uk-container">
-      <nav class="uk-navbar">
-        <div class="uk-navbar-left">
-          <nuxt-link to="../" class="uk-navbar-item uk-logo"
-            >
-            landing
-          </nuxt-link>
-        </div>
-        <div class="uk-navbar-right">
-          <ul class="uk-navbar-nav uk-visible@m">
-            <Link
-              v-if="links"
-              v-for="item in links"
-              :titulo="item.node.label"
-              :url="item.node.url.replace('http://cedin.local', '')"
-              :key="item.node.id"
-            />
-          </ul>
-          <nuxt-link
-            uk-navbar-toggle-icon=""
-            to="#offcanvas"
-            uk-toggle=""
-            class="uk-navbar-toggle uk-hidden@m uk-icon uk-navbar-toggle-icon"
-            ></nuxt-link>
-        </div>
-      </nav>
-    </div> -->
 </template>
 
 <script>
 export default {
   components: {
-    Link: () => import("@/components/commons/Link")
+    Link: () => import("@/components/commons/LinkMobile")
   },
   data() {
     return {
       links: []
     };
+  },
+  methods:{
+    recolheMenu(){
+      console.log('clicado')
+    }
   },
   mounted() {
     this.links = this.$store.state.menuLinks.mobile;
