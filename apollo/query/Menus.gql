@@ -1,0 +1,18 @@
+query loadMenu {
+  loadMenu: menus{
+    edges{
+      node{
+        slug
+        menuItems{
+          edges{
+            node{
+              label
+              url
+              id
+            }
+          }
+        }
+      }
+    }
+  }
+}
