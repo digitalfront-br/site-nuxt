@@ -1,0 +1,25 @@
+query Banners {
+  banners {
+    edges {
+      node {
+        id
+        title
+        content
+        img: featuredImage {
+          url: sourceUrl(size: LARGE)
+        }
+        info: banner_info{
+          alinhamento
+          texto
+          titulo
+          botao{
+            cor
+            mostrar
+            texto
+            url
+          }
+        }
+      }
+    }
+  }
+}

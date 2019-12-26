@@ -1,0 +1,15 @@
+query Pages {
+  pages {
+    edges {
+      node {
+        id
+        title
+        slug
+        content
+        img: featuredImage {
+          url: sourceUrl
+        }
+      }
+    }
+  }
+}

@@ -3,3 +3,18 @@
 @mixin hook-navbar-container()
   background: linear-gradient(to top, #ffffff, $global-grey-primary 90%)
   border-bottom: 1px solid $global-grey-primary
+@mixin hook-navbar-nav-item()
+  font-weight: bold
+  text-transform: uppercase
+  color: $global-secondary-background
+@mixin hook-offcanvas-bar()
+  text-transform: uppercase
+  font-weight: bold
+@mixin hook-nav-primary-item()
+  font-size: 1.3rem
+@mixin hook-divider-small()
+  border-top: 3px solid #ffffff !important
+@mixin hook-overlay-primary()
+  background: rgba(26, 25, 51, 0.5)
+@mixin hook-overlay-default()
+  background: linear-gradient(220deg, rgba(85, 194, 173, 0.5) 30%, rgba(202, 18, 224, 0.5));

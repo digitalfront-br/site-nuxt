@@ -21,12 +21,11 @@ export default {
   },
   methods: {
     loadData() {
-      this.page = this.$store.state.pages.blog.page
+      this.page = this.$store.state.pages.institucional.page
     }
   },
   mounted() {
     this.loadData()
-    console.log('pagei', this.$store.state.pages.blog.page)
   }
 }
 </script>

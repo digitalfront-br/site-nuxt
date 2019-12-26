@@ -16,12 +16,13 @@
       uk-nav=""
     >
       <Link
-        v-if="links"
+        v-if="item.node.url !== 'http://centrodireitointernacional.com.br/'"
         v-for="item in links"
         :titulo="item.node.label"
         :url="item.node.url.replace('http://cedin.local', '')"
         :key="item.node.id"
       />
+      <li v-else><a href="http://centrodireitointernacional.com.br/" target="_blank">Centro de Pesquisa</a></li>
     </ul>
 
     <div>
